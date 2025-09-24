@@ -1,0 +1,207 @@
+.widget-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 52em;
+  height: 610px;
+  width: 52em;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.blue {
+  background-color: #007bff; 
+  margin: 2px;
+  border: 1px solid #dee2e6; 
+  border-radius: 4px; 
+  padding: 7px;
+  color: white;
+}
+
+.widget-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  flex-shrink: 0;
+  max-height: 40px !important;
+}
+
+#result {
+  width: 96%;
+  height: 470px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.ace_editor {
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.widget-title {
+  font-weight: bold;
+}
+
+.widget-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.widget-controls button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  z-index: 10001;
+  position: relative;
+}
+
+.remove-btn {
+  background: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: right;
+}
+
+.add-btn {
+  background: none;
+  border: none;
+  color: lightgreen;
+  cursor: pointer;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: inline-end;
+}
+
+.copy-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #1ED760;
+  height: 48px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.copy-btn:hover {
+  transform: scale(1.04);
+  background-color: #21e065;
+}
+
+.widget-controls button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.widget-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.left-div {
+  float: left;
+  width: 21em;
+  max-height: 540;
+  overflow: hidden;
+}
+
+.right-div {
+  float: right;
+  width: 29em;
+  height: 580px;
+}
+
+.sortable-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sortable-item {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: move;
+}
+
+#input-queue {
+  height: 380px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.add-input {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.sortable-item:hover {
+  background: #e9ecef;
+}
+
+.ui-sortable-helper {
+  transform: rotate(5deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sortable-placeholder {
+  border: 2px dashed #007bff;
+  background: rgba(0, 123, 255, 0.1);
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 4px;
+}

@@ -1,0 +1,45 @@
+<div id="custom-widget" class="widget-container">
+  <div class="widget-header">
+    <span class="widget-title">Input Creator</span>
+    <div class="widget-controls">
+      <button class="minimize-btn">−</button>
+      <button class="close-btn">×</button>
+    </div>
+  </div>
+  
+  <div class="widget-content">
+    <div class="left-div">
+      <div id="add-input">
+        <div id="settings" class="blue">
+          <input type="checkbox" id="use-abbr" name="use-abbr">
+          <label for="use-abbr">Use abbreviations for long long</label> 
+          <br>
+          <input type="checkbox" id="use-optz" name="use-optz">
+          <label for="use-optz">Use cin-cout optimization</label>
+        </div>
+        <div id="input-queue">
+            <ul id="sortable-list" class="sortable-list">
+            </ul>
+        </div>
+        <div style="flex-shrink: 0;">
+          <div class="blue">
+            <input type="checkbox" id="use-t--" name="use-t--">
+            <label for="use-t--">Multiple tests?</label>
+          </div>
+          <div class="blue">
+            Add variable input
+            <button id="add-var" class="add-btn">+</button>
+          </div>
+          <div class="blue">
+            Add container input
+            <button id="add-container" class="add-btn">+</button>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="source" class="right-div">
+      <div id="result"></div> 
+      <button id="copy-btn" class="copy-btn">Copy code</button>
+    </div>
+  </div>
+</div>

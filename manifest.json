@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Input Creator",
+  "version": "1.1.0",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Toggle Widget"
+  },
+  "author" : "HABVIP",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "jquery-ui/jquery-3.6.0.min.js",
+        "jquery-ui/jquery-ui.min.js",
+        "ace-builds/src-min-noconflict/ace.js",
+        "ace-builds/src-min-noconflict/theme-monokai.js",
+        "ace-builds/src-min-noconflict/mode-c_cpp.js",
+        "content.js"
+      ],
+      "css": ["styles.css", "jquery-ui/jquery-ui.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "widget.html", 
+        "ace-builds/src-min-noconflict/ace.js",
+        "ace-builds/src-min-noconflict/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
